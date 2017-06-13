@@ -6,23 +6,138 @@
         <title>BREADCRUMBS</title>
         <meta name="description" content="A quick demo of pulling data and showing results.">
         <link rel="stylesheet" href="main.css">
+        <style>
+        #map {
+            width: 100%;
+            height: 400px;
+            background-color: grey;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid black;
+        }
+          /* Optional: Makes the sample page fill the window. */
+        html, body{
+            height: 100%;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
     </head>
     <body>
         <h2>Breadcrumbs</h2>
-        <img src="http://imgur.com/k9RvlIU" alt="Breadcrumbs" style="width:304px;height:228px;">
+        <div id="map"></div>
         <p>
             This is a demo of the basic functionality of Breadcrumbs. It will allow a user to either enter a coordinate value with a time and see it displayed on the map or to poll current location and have the current locaton displayed on a map. The display coordinates button will allow a user to see print outs for the informaiton in the text box below. The clear all data button will reset the page to start again.
-        <p>
+        </p>
+        <input type="button" onclick="saveIt()" value="Record Coordinates">
             
-        <button type="button">Record Coordinates</button>
-            
-        <form>
+        <form id="form">
             Time: <input type="text" name="time"><br>
             Latitude: <input type="text" name="lat"><br>
             Longitude: <input type="text" name="lon"><br>
+            <input type="button" onclick="Location()" value="Display Coordinates">
+            <input type="button" onclick="clearForm()" value="Reset form">
         </form>
         
-        <button type="button">Display Coordinates</button>
-        <button type="button">Clear all Data</button>
+        
+        <p id="geoL"></p>
     </body>
+    <script>
+        //document.getElementById("geoL").onload = function() {geoLocation()};
+        var x = document.getElementById("geoL");
+        var locationObj = [];
+        
+        //Figure out if the browser supports location finding
+        function Location() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        //Display with text the position Lat and Long
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+        }
+        
+        //Reset entire web page
+        function clearForm() {
+            document.getElementById("form").reset();
+            x.innerHTML = "";
+        }
+        
+        function createLocationObj(lat, long){
+            var v = new Object;
+            v.lat = lat;
+            v.long = long;
+            //v.c_time = time;
+        }
+        
+        //Save this to a record
+        function saveIt() { 
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(savePos);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        //Save Lat and Long to a record
+        function savePos(position) {
+            console.log(position.coords.latitude);
+            var temp = createLocationObj(position.coords.latitude, position.coords.longitude);
+            locationObj.push(temp);
+            console.log(locationObj);
+        }
+        
+    </script>
+    <script>
+
+        var map, infoWindow;
+        
+        //Drawing the map
+        function drawMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 6
+            });
+            infoWindow = new google.maps.InfoWindow;
+            
+            //As long as the browser supports it
+            //Grab the geolocations storing them with a lat, and long
+            //Set the position on the map of the location your browser is presenting
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Location found.');
+                infoWindow.open(map);
+                map.setCenter(pos);
+            }, function() {
+                handleLocationError(true, infoWindow, map.getCenter());
+            });
+            //Some older browsers do not support this functionality
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+            'Error: The Geolocation service failed.' :
+            'Error: Your browser doesn\'t support geolocation.');
+            infoWindow.open(map);
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSsXDVMUU87Y5s8FXaHO_0DNOrhUZ03Y&callback=drawMap">
+    </script>
 </html>
