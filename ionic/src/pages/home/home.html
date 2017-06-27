@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Breadcrumbs</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div #map id="map"></div>
+  <ion-item>
+    <ion-label stacked>Time</ion-label>
+    <ion-input type="text" [value]="TimeMil" [(ngModel)]="TimeMil" placeholder="Hour:Minute (Military)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Latitude</ion-label>
+    <ion-input type="text" [value]="Latitude" [(ngModel)]="Latitude" placeholder="51.5678N"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Longitude</ion-label>
+    <ion-input type="text" [value]="Longitude" [(ngModel)]="Longitude" placeholder="0.2739E"></ion-input>
+  </ion-item>
+
+  <ion-list>
+    <button ion-button block color="dark" (click)="doAlert()">Record Coordinates</button>
+  </ion-list>
+</ion-content>
