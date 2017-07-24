@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Breadcrumbs</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div #map id="map"></div>
+  <ion-buttons end>
+    <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+  </ion-buttons>
+  <ion-item>
+    <ion-label stacked>Latitude</ion-label>
+    <ion-input type="text" [value]="Latitude" [(ngModel)]="Latitude" placeholder="51.5678N"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Longitude</ion-label>
+    <ion-input type="text" [value]="Longitude" [(ngModel)]="Longitude" placeholder="0.2739E"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime displayFormat="MMM DD, YYYY" pickerFormat="MMM DD YYYY" [(ngModel)]="Date"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Time</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="Time"></ion-datetime>
+  </ion-item>
+
+  <ion-list>
+    <button ion-button block color="dark" (click)="doAlert()">Record Coordinates</button>
+  </ion-list>
+</ion-content>
