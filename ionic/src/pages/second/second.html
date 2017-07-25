@@ -1,0 +1,32 @@
+﻿<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Live Run info
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="launchAboutPage()">
+        <ion-icon name="information-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>Current Latitude: {{locationTracker.lat}}</p>
+  <p>Current Longitude: {{locationTracker.lng}}</p>
+
+  <p>TIME HERE</p>
+
+  <p>TOTAL DISTANCE HERE</p>
+
+  <p>
+    <button ion-button full large color="primary" (click)="stop()">
+      Pause Run
+    </button>
+  </p>
+  <p>
+    <button ion-button full large color="danger" (click)="launchResultsPage()">
+      End Run
+    </button>
+  </p>
+</ion-content>
