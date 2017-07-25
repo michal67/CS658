@@ -1,11 +1,44 @@
+﻿
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
+  <ion-navbar color ="primary">
+    <ion-title>About Breadcrumbs</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closeAbout()">
+        <ion-icon item-right name="ios-close-outline"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
 
+<ion-content padding>
+  <p>This is our breadcrumbs application for CS658. We are currently working on development and attempting to improve functionality whenever we can. 
+      In this about we will explain the use of the app and  our plans moving forward.  
+  </p>
+  <h6>Application Use</h6>
+  <ol>
+    <li>
+      On applicaton start up, the user will be presented with a start run button. Once this button is clicked, the user will then be taken
+      to a page that displays thier run information. Allowing them to see thier time, distance and current location and route on a map.
+    </li>
+    <li>
+      From here the user can either choose to pause the run, then continue, or can choose to end the run. Ending the run will display the final
+      results then allow the user to start another run again.
+    </li>
+  </ol>
+  <h6>Planned Development</h6>
+  <ol>
+    <li>
+      We plan to add the functionality to store user data, and have a login screen at application start up
+    </li>
+    <li>
+      We plan to add added functionality to the end of run screen, displaying more accurate and percise data at the user's request.
+    </li>
+    <li>
+      We plan to refactor the look of the app to make it more unique, eye-catching, and easy to use.
+    </li>
+  </ol>
+    <h6>
+      Thank you for using our application!
+    </h6>
 </ion-content>
