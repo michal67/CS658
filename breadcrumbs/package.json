@@ -25,7 +25,7 @@
     "@ionic-native/geolocation": "^4.1.0",
     "@ionic-native/splash-screen": "3.12.1",
     "@ionic-native/status-bar": "3.12.1",
-    "@ionic/storage": "^1.1.9",
+    "@ionic/storage": "^1.1.6",
     "ajv": "^5.2.2",
     "cordova-sqlite-storage": "^2.0.4",
     "ionic-angular": "3.5.3",

@@ -12,7 +12,7 @@ import { AboutPage } from '../pages/about/about';
 import { LocationTracker } from '../providers/location-tracker/location-tracker';
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { Geolocation } from '@ionic-native/geolocation';
-
+import { Storage } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -41,6 +41,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     Geolocation,
     StatusBar,
     SplashScreen,
+    Storage,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })

@@ -3,6 +3,7 @@ import { NavController, ModalController } from 'ionic-angular';
 import { SecondPage } from '../second/second';
 import { AboutPage } from '../about/about';
 import { LocationTracker } from '../../providers/location-tracker/location-tracker';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'page-home',
@@ -10,7 +11,7 @@ import { LocationTracker } from '../../providers/location-tracker/location-track
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public locationTracker: LocationTracker) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public locationTracker: LocationTracker, public storage: Storage) {
 
   }
 
@@ -30,6 +31,17 @@ export class HomePage {
 
   stop(){
     this.locationTracker.stopTracking();
+  }
+
+  //Storage methods
+  SQLset(key, value){
+    this.storage.set(key, value);
+  }
+
+  SQLget(key){
+    this.storage.get(key).then((data) => {
+      console.log(data);
+    });
   }
 
 }
