@@ -1,5 +1,5 @@
 ﻿<ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="theme">
     <ion-title>
       Run Results
     </ion-title>
@@ -13,8 +13,8 @@
 
 
 <ion-content padding>
-  <p>Final Distance Travelled: {{locationTracker.distance}}</p>
-  <p>Final Time Elapsed: {{locationTracker.myTime}}</p>
+  <p style="font-size: 24px">Final Distance Travelled: {{locationTracker.distance}} mi</p>
+  <p style="font-size: 24px">Final Time Elapsed: {{locationTracker.myTime}}</p>
   
-  <p><button ion-button full color="danger" (click)='launchHomePage()'>Return to Home</button></p>
+  <p><button ion-button round full large color="theme" (click)='launchHomePage()'>Return to Home</button></p>
 </ion-content>
