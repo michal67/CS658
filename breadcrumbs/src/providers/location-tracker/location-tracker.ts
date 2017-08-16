@@ -43,7 +43,7 @@ export class LocationTracker {
     this.ogtime = -1;
     this.oldlat = 0;
     this.oldlng = 0;
-    this.myTime = "0:00:00";
+    this.myTime = "0";
 
     // Background Tracking
 
@@ -78,7 +78,7 @@ export class LocationTracker {
     // Foreground Tracking
 
     let options = {
-      frequency: 3000,
+      frequency: 1000,
       enableHighAccuracy: true
     };
 

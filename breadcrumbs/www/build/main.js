@@ -150,7 +150,7 @@ var SecondPage = (function () {
 }());
 SecondPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-second',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Live Run info\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <p>Current Latitude: {{locationTracker.lat}}</p>\n  <p>Current Longitude: {{locationTracker.lng}}</p>\n  <p>Current Time: {{locationTracker.myTime}}</p>\n  <p>Total Distance Traveled: {{locationTracker.distance}}</p>\n\n  <p>\n\n    <button ion-button full large color="primary" (click)="stop()">\n\n      Pause Run\n\n    </button>\n\n  </p>\n  <p>\n    <button ion-button full large color="danger" (click)="launchResultsPage()">\n\n      End Run\n\n    </button>\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/,
+        selector: 'page-second',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Live Run info\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <p>Current Latitude: {{locationTracker.lat}}</p>\n  <p>Current Longitude: {{locationTracker.lng}}</p>\n  <p>Elapsed Time: {{locationTracker.myTime}}</p>\n  <p>Total Distance Traveled: {{locationTracker.distance}}</p>\n\n  <p>\n\n    <button ion-button full large color="primary" (click)="stop()">\n\n      Pause Run\n\n    </button>\n\n  </p>\n  <p>\n    <button ion-button full large color="danger" (click)="launchResultsPage()">\n\n      End Run\n\n    </button>\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__providers_location_tracker_location_tracker__["a" /* LocationTracker */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */]])
 ], SecondPage);
@@ -467,7 +467,7 @@ var LocationTracker = (function () {
         this.ogtime = -1;
         this.oldlat = 0;
         this.oldlng = 0;
-        this.myTime = "0:00:00";
+        this.myTime = "0";
         // Background Tracking
         var config = {
             desiredAccuracy: 0,
@@ -490,7 +490,7 @@ var LocationTracker = (function () {
         this.backgroundGeolocation.start();
         // Foreground Tracking
         var options = {
-            frequency: 3000,
+            frequency: 1000,
             enableHighAccuracy: true
         };
         this.watch = this.geolocation.watchPosition(options).filter(function (p) { return p.code === undefined; }).subscribe(function (position) {
