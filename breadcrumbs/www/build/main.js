@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -9,11 +9,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 109;
+webpackEmptyAsyncContext.id = 110;
 
 /***/ }),
 
-/***/ 150:
+/***/ 151:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -22,21 +22,21 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 150;
+webpackEmptyAsyncContext.id = 151;
 
 /***/ }),
 
-/***/ 193:
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__second_second__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__second_second__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_about__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_location_tracker_location_tracker__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -95,14 +95,14 @@ HomePage = __decorate([
 
 /***/ }),
 
-/***/ 194:
+/***/ 195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SecondPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__results_results__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__results_results__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_about__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_location_tracker_location_tracker__ = __webpack_require__(51);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -150,7 +150,7 @@ var SecondPage = (function () {
 }());
 SecondPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-second',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Live Run info\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <p>Current Latitude: {{locationTracker.lat}}</p>\n  <p>Current Longitude: {{locationTracker.lng}}</p>\n  <p>Current Time: {{locationTracker.myTime}}</p>\n\n  <p>TOTAL DISTANCE HERE</p>\n\n  <p>\n\n    <button ion-button full large color="primary" (click)="stop()">\n\n      Pause Run\n\n    </button>\n\n  </p>\n  <p>\n    <button ion-button full large color="danger" (click)="launchResultsPage()">\n\n      End Run\n\n    </button>\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/,
+        selector: 'page-second',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Live Run info\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <p>Current Latitude: {{locationTracker.lat}}</p>\n  <p>Current Longitude: {{locationTracker.lng}}</p>\n  <p>Current Time: {{locationTracker.myTime}}</p>\n  <p>Total Distance Traveled: {{locationTracker.distance}}</p>\n\n  <p>\n\n    <button ion-button full large color="primary" (click)="stop()">\n\n      Pause Run\n\n    </button>\n\n  </p>\n  <p>\n    <button ion-button full large color="danger" (click)="launchResultsPage()">\n\n      End Run\n\n    </button>\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__providers_location_tracker_location_tracker__["a" /* LocationTracker */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */]])
 ], SecondPage);
@@ -159,7 +159,7 @@ SecondPage = __decorate([
 
 /***/ }),
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -209,7 +209,7 @@ var ResultsPage = (function () {
 }());
 ResultsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-results',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/results/results.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Run Results\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <p>Total Time</p>\n  <p>Total Distance</p>\n  <p>Splits on Scrollers keeping totals at top</p>\n  <p><button ion-button full color="danger" (click)=\'launchHomePage()\'>Start Next Run</button></p>\n</ion-content>\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/results/results.html"*/,
+        selector: 'page-results',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/results/results.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Run Results\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <p>Final Distance Travelled: {{locationTracker.distance}}</p>\n  <p>Final Time Elapsed: {{locationTracker.myTime}}</p>\n  \n  <p><button ion-button full color="danger" (click)=\'launchHomePage()\'>Start Next Run</button></p>\n</ion-content>\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/results/results.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */], __WEBPACK_IMPORTED_MODULE_3__providers_location_tracker_location_tracker__["a" /* LocationTracker */]])
 ], ResultsPage);
@@ -240,17 +240,17 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_second_second__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_results_results__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_second_second__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_results_results__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_about_about__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_location_tracker_location_tracker__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_background_geolocation__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_geolocation__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_storage__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_background_geolocation__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_geolocation__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_storage__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -320,9 +320,9 @@ AppModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(194);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -415,8 +415,9 @@ AboutPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_filter__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_background_geolocation__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_background_geolocation__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -430,22 +431,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var LocationTracker = (function () {
-    function LocationTracker(zone, backgroundGeolocation, geolocation) {
+    //-------------------------
+    function LocationTracker(zone, backgroundGeolocation, geolocation, storage) {
         this.zone = zone;
         this.backgroundGeolocation = backgroundGeolocation;
         this.geolocation = geolocation;
+        this.storage = storage;
         this.arr = [];
         this.lat = 0;
         this.lng = 0;
         this.time = 0;
         this.myTime = "";
+        this.finalTime = "";
+        this.finalDist = 0;
+        //-------------------------
+        //"Total" variables
+        this.latArray = [];
+        this.lngArray = [];
+        this.timeArray = [];
+        this.distance = 0;
+        this.timenum = 0;
+        this.oldlat = 0;
+        this.oldlng = 0;
+        this.ogtime = -1; //Sentinel value for unassigned ogtime
+        this.pullCounter = 0;
     }
     ;
     //const config: BackgroundGeolocationConfig = {};
     LocationTracker.prototype.startTracking = function () {
-        // Background Tracking
         var _this = this;
+        this.distance = 0;
+        this.timenum = 0;
+        this.ogtime = -1;
+        this.oldlat = 0;
+        this.oldlng = 0;
+        this.myTime = "0:00:00";
+        // Background Tracking
         var config = {
             desiredAccuracy: 0,
             stationaryRadius: 20,
@@ -474,32 +497,65 @@ var LocationTracker = (function () {
             console.log(position);
             console.log(position.timestamp);
             //converts from epoch to current time which you can then do .getHours... etc
-            var utcSeconds = position.timestamp;
-            var d = new Date(utcSeconds);
-            var hours = "" + d.getHours();
-            var minutes = "" + d.getMinutes();
-            var seconds = "" + d.getSeconds();
-            if (d.getMinutes() < 10) {
-                minutes = "0" + minutes;
-            }
-            if (d.getSeconds() < 10) {
-                seconds = "0" + seconds;
-            }
-            var my_time = hours + ":" + minutes + ":" + seconds;
             // Run update inside of Angular's zone
             _this.zone.run(function () {
+                //----------------------------------------------------
+                //Begin "totals" calculations
+                _this.latArray.push(_this.lat);
+                _this.lngArray.push(_this.lng);
+                _this.timeArray.push(_this.time);
+                if (_this.ogtime == -1) {
+                    _this.ogtime = _this.time;
+                }
+                //Finding time elapsed
+                _this.timenum = _this.time - _this.ogtime;
+                console.log(_this.timenum);
+                var d = new Date(_this.timenum);
+                var hours = "" + d.getUTCHours();
+                var minutes = "" + d.getUTCMinutes();
+                var seconds = "" + d.getUTCSeconds();
+                if (d.getUTCMinutes() < 10) {
+                    minutes = "0" + minutes;
+                }
+                if (d.getUTCSeconds() < 10) {
+                    seconds = "0" + seconds;
+                }
+                var my_time = hours + ":" + minutes + ":" + seconds;
                 _this.lat = position.coords.latitude;
                 _this.lng = position.coords.longitude;
                 _this.time = position.timestamp;
                 _this.myTime = my_time;
-                _this.loc_time = [_this.time, _this.lat, _this.lng];
+                _this.loc_time = [_this.timenum, _this.lat, _this.lng];
                 _this.arr.push(_this.loc_time);
                 //console.log(this.arr);
+                //Finding distance travelled
+                if (_this.oldlat != 0 && _this.oldlng != 0) {
+                    var earthRadius = 6371;
+                    var lat_delta = (_this.lat - _this.oldlat) * (Math.PI / 180);
+                    var lng_delta = (_this.lng - _this.oldlng) * (Math.PI / 180);
+                    var a = Math.sin(lat_delta / 2) * Math.sin(lat_delta / 2) +
+                        (Math.cos((_this.lat) * (Math.PI / 180))) * (Math.cos((_this.oldlat) * (Math.PI / 180))) *
+                            Math.sin(lng_delta / 2) * Math.sin(lng_delta / 2);
+                    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    var km = earthRadius * c;
+                    var miles = km * 0.621371192;
+                    _this.distance += miles;
+                    console.log(_this.distance);
+                }
+                _this.oldlat = _this.lat;
+                _this.oldlng = _this.lng;
+                //----------------------------------------------------
             });
         });
     };
     LocationTracker.prototype.stopTracking = function () {
+        this.finalTime = this.myTime;
+        this.finalDist = this.distance;
         console.log('stopTracking');
+        console.log("Final Time: " + this.finalTime);
+        console.log("Final Distance: " + this.finalDist);
+        this.storage.set('lastDistance', this.finalDist);
+        this.storage.set('lastTime', this.finalTime);
         this.backgroundGeolocation.finish();
         this.watch.unsubscribe();
     };
@@ -507,7 +563,7 @@ var LocationTracker = (function () {
 }());
 LocationTracker = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* NgZone */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_background_geolocation__["a" /* BackgroundGeolocation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */]])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* NgZone */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_background_geolocation__["a" /* BackgroundGeolocation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["a" /* Storage */]])
 ], LocationTracker);
 
 //# sourceMappingURL=location-tracker.js.map
