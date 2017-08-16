@@ -37,5 +37,4 @@ export class SecondPage {
   stop(){
     this.locationTracker.stopTracking();
   }
-
 }

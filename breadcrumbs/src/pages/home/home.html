@@ -1,7 +1,7 @@
 ﻿<ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      Breadcrumbs
+     
     </ion-title>
     <ion-buttons end>
       <button ion-button (click)="launchAboutPage()">
@@ -10,9 +10,19 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
+<style>
+    ion-content{
+        background: grey;
+        background-size: cover;         
+        background-repeat: no-repeat;
+        background-position: center center;            
+    }
 
-<ion-content padding>
-    <button ion-button full color = 'secondary' (click)="launchSecondPage()">
-      Start Run
-    </button>
+</style>
+<ion-content padding class="no-scroll">
+     <img src="../../assets/themeing/banner.png" alt="Breadcrumbs Banner">
+    <div text-center style="margin-top: 5%">
+        <button ion-button round outli large color = 'theme' (click)="launchSecondPage()">Start Run</button>
+    </div>
+        
 </ion-content>

@@ -23,7 +23,7 @@ export class ResultsPage {
   }
 
   launchHomePage() {
-      this.start();
+      this.navCtrl.pop();
       this.navCtrl.pop();
   }
 
