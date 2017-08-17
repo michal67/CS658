@@ -86,7 +86,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\pages\home\home.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n     \n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n         <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n<style>\n\n    ion-content{\n\n        background: grey;\n\n        background-size: cover;         \n\n        background-repeat: no-repeat;\n\n        background-position: center center;            \n\n    }\n\n\n\n</style>\n\n<ion-content padding class="no-scroll">\n\n     <img src="../../assets/themeing/banner.png" alt="Breadcrumbs Banner">\n\n    <div text-center style="margin-top: 5%">\n\n        <button ion-button round outli large color = \'theme\' (click)="launchSecondPage()">Start Run</button>\n\n    </div>\n\n        \n\n</ion-content>'/*ion-inline-end:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/home/home.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n         <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n<style>\n\n    ion-content{\n\n        background: grey;\n\n        background-size: cover;\n\n        background-repeat: no-repeat;\n\n        background-position: center center;\n\n    }\n\n\n\n</style>\n\n<ion-content padding class="no-scroll">\n\n     <img src="assets/themeing/banner.png" alt="Breadcrumbs Banner">\n\n    <div text-center style="margin-top: 5%">\n\n        <button ion-button round outli large color = \'theme\' (click)="launchSecondPage()">Start Run</button>\n\n    </div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */], __WEBPACK_IMPORTED_MODULE_4__providers_location_tracker_location_tracker__["a" /* LocationTracker */], __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["a" /* Storage */]])
 ], HomePage);
@@ -150,12 +150,11 @@ var SecondPage = (function () {
 }());
 SecondPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-second',template:/*ion-inline-start:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\pages\second\second.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Live Run info\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>Current Latitude: {{locationTracker.lat}}</p>\n\n  <p>Current Longitude: {{locationTracker.lng}}</p>\n\n  <p>Elapsed Time: {{locationTracker.myTime}}</p>\n\n  <p>Total Distance Traveled: {{locationTracker.distance}}</p>\n\n\n\n  <p>\n\n    <button ion-button full large color="danger" (click)="launchResultsPage()">\n\n      End Run\n\n    </button>\n\n  </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\pages\second\second.html"*/,
+        selector: 'page-second',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Live Run info\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <p>Current Latitude: {{locationTracker.lat}}</p>\n\n  <p>Current Longitude: {{locationTracker.lng}}</p>\n\n  <p>Elapsed Time: {{locationTracker.myTime}}</p>\n\n  <p>Total Distance Traveled: {{locationTracker.distance}}</p>\n\n\n\n  <p>\n\n    <button ion-button full large color="danger" (click)="launchResultsPage()">\n\n      End Run\n\n    </button>\n\n  </p>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/second/second.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__providers_location_tracker_location_tracker__["a" /* LocationTracker */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__providers_location_tracker_location_tracker__["a" /* LocationTracker */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__providers_location_tracker_location_tracker__["a" /* LocationTracker */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */]])
 ], SecondPage);
 
-var _a, _b, _c, _d;
 //# sourceMappingURL=second.js.map
 
 /***/ }),
@@ -210,12 +209,11 @@ var ResultsPage = (function () {
 }());
 ResultsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-results',template:/*ion-inline-start:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\pages\results\results.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Run Results\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <p>Final Distance Travelled: {{locationTracker.distance}}</p>\n\n  <p>Final Time Elapsed: {{locationTracker.myTime}}</p>\n\n  \n\n  <p><button ion-button full color="danger" (click)=\'launchHomePage()\'>Return to Home</button></p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\pages\results\results.html"*/,
+        selector: 'page-results',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/results/results.html"*/'﻿<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n      Run Results\n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="launchAboutPage()">\n\n        <ion-icon name="information-circle"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <p>Final Distance Travelled: {{locationTracker.finalDist}}</p>\n\n  <p>Final Time Elapsed: {{locationTracker.finalTime}}</p>\n\n\n\n  <p><button ion-button full color="danger" (click)=\'launchHomePage()\'>Return to Home</button></p>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/results/results.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__providers_location_tracker_location_tracker__["a" /* LocationTracker */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_location_tracker_location_tracker__["a" /* LocationTracker */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */], __WEBPACK_IMPORTED_MODULE_3__providers_location_tracker_location_tracker__["a" /* LocationTracker */]])
 ], ResultsPage);
 
-var _a, _b, _c, _d;
 //# sourceMappingURL=results.js.map
 
 /***/ }),
@@ -352,7 +350,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
@@ -400,7 +398,7 @@ var AboutPage = (function () {
 }());
 AboutPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\pages\about\about.html"*/'﻿\n<ion-header>\n\n  <ion-navbar color ="primary">\n\n    <ion-title>About Breadcrumbs</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="closeAbout()">\n\n        <ion-icon item-right name="ios-close-outline"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <p>This is our breadcrumbs application for CS658. We are currently working on development and attempting to improve functionality whenever we can. \n      In this about we will explain the use of the app and  our plans moving forward.  \n  </p>\n  <h6>Application Use</h6>\n\n  <ol>\n\n    <li>\n\n      On applicaton start up, the user will be presented with a start run button. Once this button is clicked, the user will then be taken\n\n      to a page that displays thier run information. Allowing them to see thier time, distance and current location and route on a map.\n\n    </li>\n\n    <li>\n\n      From here the user can either choose to pause the run, then continue, or can choose to end the run. Ending the run will display the final\n\n      results then allow the user to start another run again.\n\n    </li>\n\n  </ol>\n  <h6>Planned Development</h6>\n\n  <ol>\n\n    <li>\n      We plan to add the functionality to store user data, and have a login screen at application start up\n\n    </li>\n\n    <li>\n\n      We plan to add added functionality to the end of run screen, displaying more accurate and percise data at the user\'s request.\n\n    </li>\n    <li>\n      We plan to refactor the look of the app to make it more unique, eye-catching, and easy to use.\n    </li>\n\n  </ol>\n    <h6>\n      Thank you for using our application!\n    </h6>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nicho\OneDrive\Documents\CS658\breadcrumbs\src\pages\about\about.html"*/,
+        selector: 'page-about',template:/*ion-inline-start:"/Users/blizzard/CS658/breadcrumbs/src/pages/about/about.html"*/'﻿\n<ion-header>\n\n  <ion-navbar color ="primary">\n\n    <ion-title>About Breadcrumbs</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="closeAbout()">\n\n        <ion-icon item-right name="ios-close-outline"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <p>This is our breadcrumbs application for CS658. We are currently working on development and attempting to improve functionality whenever we can. \n      In this about we will explain the use of the app and  our plans moving forward.  \n  </p>\n  <h6>Application Use</h6>\n\n  <ol>\n\n    <li>\n\n      On applicaton start up, the user will be presented with a start run button. Once this button is clicked, the user will then be taken\n\n      to a page that displays thier run information. Allowing them to see thier time, distance and current location and route on a map.\n\n    </li>\n\n    <li>\n\n      From here the user can either choose to pause the run, then continue, or can choose to end the run. Ending the run will display the final\n\n      results then allow the user to start another run again.\n\n    </li>\n\n  </ol>\n  <h6>Planned Development</h6>\n\n  <ol>\n\n    <li>\n      We plan to add the functionality to store user data, and have a login screen at application start up\n\n    </li>\n\n    <li>\n\n      We plan to add added functionality to the end of run screen, displaying more accurate and percise data at the user\'s request.\n\n    </li>\n    <li>\n      We plan to refactor the look of the app to make it more unique, eye-catching, and easy to use.\n    </li>\n\n  </ol>\n    <h6>\n      Thank you for using our application!\n    </h6>\n</ion-content>\n'/*ion-inline-end:"/Users/blizzard/CS658/breadcrumbs/src/pages/about/about.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], AboutPage);
@@ -447,7 +445,7 @@ var LocationTracker = (function () {
         this.time = 0;
         this.myTime = "";
         this.finalTime = "";
-        this.finalDist = 0;
+        this.finalDist = "";
         //-------------------------
         //"Total" variables
         this.latArray = [];
@@ -463,14 +461,14 @@ var LocationTracker = (function () {
     ;
     //const config: BackgroundGeolocationConfig = {};
     LocationTracker.prototype.startTracking = function () {
-        var _this = this;
-        this.distance = 0;
-        this.timenum = 0;
-        this.ogtime = -1;
-        this.oldlat = 0;
-        this.oldlng = 0;
-        this.myTime = "0";
         // Background Tracking
+        //this.distance = 0;
+        //this.timenum = 0;
+        //this.ogtime = -1;
+        //this.oldlat = 0;
+        //this.oldlng = 0;
+        //this.myTime = "0";
+        var _this = this;
         var config = {
             desiredAccuracy: 0,
             stationaryRadius: 20,
@@ -492,7 +490,7 @@ var LocationTracker = (function () {
         this.backgroundGeolocation.start();
         // Foreground Tracking
         var options = {
-            frequency: 1000,
+            frequency: 3000,
             enableHighAccuracy: true
         };
         this.watch = this.geolocation.watchPosition(options).filter(function (p) { return p.code === undefined; }).subscribe(function (position) {
@@ -552,7 +550,13 @@ var LocationTracker = (function () {
     };
     LocationTracker.prototype.stopTracking = function () {
         this.finalTime = this.myTime;
-        this.finalDist = this.distance;
+        this.finalDist = this.distance.toFixed(2);
+        this.ogtime = -1;
+        this.oldlat = 0;
+        this.oldlng = 0;
+        this.myTime = "";
+        this.time = 0;
+        this.distance = 0;
         console.log('stopTracking');
         console.log("Final Time: " + this.finalTime);
         console.log("Final Distance: " + this.finalDist);

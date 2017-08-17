@@ -15,7 +15,7 @@ export class LocationTracker {
   public time: number = 0;
   public myTime: string = "";
   public finalTime: string = "";
-  public finalDist: number = 0;
+  public finalDist: string = "";
 
   //-------------------------
   //"Total" variables
@@ -37,15 +37,13 @@ export class LocationTracker {
   //const config: BackgroundGeolocationConfig = {};
 
   startTracking() {
-
-    this.distance = 0;
-    this.timenum = 0;
-    this.ogtime = -1;
-    this.oldlat = 0;
-    this.oldlng = 0;
-    this.myTime = "0";
-
     // Background Tracking
+    //this.distance = 0;
+    //this.timenum = 0;
+    //this.ogtime = -1;
+    //this.oldlat = 0;
+    //this.oldlng = 0;
+    //this.myTime = "0";
 
     let config = {
       desiredAccuracy: 0,
@@ -78,7 +76,7 @@ export class LocationTracker {
     // Foreground Tracking
 
     let options = {
-      frequency: 1000,
+      frequency: 3000,
       enableHighAccuracy: true
     };
 
@@ -90,6 +88,7 @@ export class LocationTracker {
 
       // Run update inside of Angular's zone
       this.zone.run(() => {
+
         //----------------------------------------------------
         //Begin "totals" calculations
 
@@ -163,15 +162,19 @@ export class LocationTracker {
   stopTracking() {
     this.finalTime = this.myTime;
     this.finalDist = this.distance;
+    this.ogtime = -1;
+    this.oldlat = 0;
+    this.oldlng = 0;
+    this.myTime = "";
+    this.time = 0;
+    this.distance = 0;
     console.log('stopTracking');
     console.log("Final Time: " + this.finalTime);
     console.log("Final Distance: " + this.finalDist);
     this.storage.set('lastDistance', this.finalDist);
     this.storage.set('lastTime', this.finalTime);
-
     this.backgroundGeolocation.finish();
     this.watch.unsubscribe();
-
   }
 
 }
