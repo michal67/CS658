@@ -15,7 +15,7 @@ export class LocationTracker {
   public time: number = 0;
   public myTime: string = "";
   public finalTime: string = "";
-  public finalDist: string = "";
+  public finalDist: number = 0;
 
   //-------------------------
   //"Total" variables

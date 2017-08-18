@@ -12,11 +12,11 @@
 </ion-header>
 
 <ion-content padding>
+  <div #map id="map"></div>
   <p>Current Latitude: {{locationTracker.lat}}</p>
   <p>Current Longitude: {{locationTracker.lng}}</p>
   <p>Elapsed Time: {{locationTracker.myTime}}</p>
   <p>Total Distance Traveled: {{locationTracker.distance}}</p>
-
   <p>
     <button ion-button full large color="danger" (click)="launchResultsPage()">
       End Run

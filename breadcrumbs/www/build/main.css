@@ -25202,3 +25202,8 @@ ion-navbar.toolbar {
 page-home .no-scroll .scroll-content {
   overflow: hidden;
 }
+
+page-home #map {
+  height: 100%;
+  width: 100%;
+}
