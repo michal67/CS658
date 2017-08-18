@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { AboutPage } from '../about/about';
+import { LocationTracker } from '../../providers/location-tracker/location-tracker';
 
 /**
  * Generated class for the AccountPage page.
@@ -16,9 +17,9 @@ import { AboutPage } from '../about/about';
 })
 export class AccountPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public locationTracker: LocationTracker, public modalCtrl: ModalController) {
   }
-  
+
   launchAboutPage() {
       const myAbout = this.modalCtrl.create(AboutPage);
       myAbout.present();

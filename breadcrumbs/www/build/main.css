@@ -27505,16 +27505,15 @@ page-home .no-scroll .scroll-content {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-page-home #map {
-  height: 100%;
-  width: 100%;
-=======
 page-results .no-scroll .scroll-content {
   overflow: hidden;
 }
 
 page-second .no-scroll .scroll-content {
   overflow: hidden;
->>>>>>> 35733e8657142695b2af900657b81416f5bcf012
+}
+
+page-second #map {
+  height: 50%;
+  width: 100%;
 }

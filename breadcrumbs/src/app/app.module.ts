@@ -6,7 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LocationTracker } from '../providers/location-tracker/location-tracker';
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { Geolocation } from '@ionic-native/geolocation';
-//import { Storage } from '@ionic/storage';
+import { Storage } from '@ionic/storage';
 
 import { MyApp } from './app.component';
 import { StartPage } from '../pages/start/start';
@@ -47,7 +47,7 @@ import { AboutPage } from '../pages/about/about';
     Geolocation,
     StatusBar,
     SplashScreen,
-    //Storage,
+    Storage,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

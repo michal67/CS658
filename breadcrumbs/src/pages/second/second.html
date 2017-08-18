@@ -10,26 +10,14 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-<<<<<<< HEAD
 
-<ion-content padding>
+<ion-content padding class="no-scroll">
   <div #map id="map"></div>
   <p>Current Latitude: {{locationTracker.lat}}</p>
   <p>Current Longitude: {{locationTracker.lng}}</p>
-  <p>Elapsed Time: {{locationTracker.myTime}}</p>
-  <p>Total Distance Traveled: {{locationTracker.distance}}</p>
-  <p>
-    <button ion-button full large color="danger" (click)="launchResultsPage()">
-      End Run
-    </button>
-  </p>
-=======
-<ion-content padding class="no-scroll">
-  <p>Current Latitude: {{locationTracker.lat}}</p>
-  <p>Current Longitude: {{locationTracker.lng}}</p>
-  <p style="font-size: 24px">Elapsed Time: {{locationTracker.myTime}}</p>
-  <p style="font-size: 24px">Total Distance Traveled: {{locationTracker.distance}} mi</p>
+  <p style="font-size: 18px">Elapsed Time: {{locationTracker.myTime}}</p>
+  <p style="font-size: 18px">Total Distance Traveled: {{locationTracker.distance}} mi</p>
 
     <button ion-button fion-button round full large color = 'theme'  (click)="launchResultsPage()">End Run</button>
->>>>>>> 35733e8657142695b2af900657b81416f5bcf012
+
 </ion-content>

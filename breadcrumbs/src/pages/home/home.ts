@@ -12,8 +12,8 @@ import { LocationTracker } from '../../providers/location-tracker/location-track
 export class HomePage {
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public locationTracker: LocationTracker) {
-  
-  
+
+
   //public storage: Storage) {
 
   }
@@ -37,14 +37,14 @@ export class HomePage {
   }
 
   //Storage methods
-  SQLset(key, value){
+  //SQLset(key, value){
     //this.storage.set(key, value);
-  }
+  //}
 
-  SQLget(key){
-    //this.storage.get(key).then((data) => {
-    //  console.log(data);
+  //SQLget(key){
+      //this.storage.get(key).then((data) => {
+      //console.log(data);
     //});
-  }
+  //}
 
 }

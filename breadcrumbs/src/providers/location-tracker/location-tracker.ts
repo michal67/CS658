@@ -17,6 +17,9 @@ export class LocationTracker {
   public finalTime: string = "";
   public finalDist: number = 0;
 
+  public persistentTime: string = "---";
+  public persistentDistance: string = "---";
+
   //-------------------------
   //"Total" variables
   public latArray: Array<number> = [];
@@ -44,6 +47,23 @@ export class LocationTracker {
     //this.oldlat = 0;
     //this.oldlng = 0;
     //this.myTime = "0";
+
+
+    this.persistentTime = "" + this.storage.get('lastTime').then((data) => {
+    console.log(data);
+    });
+
+    if(this.persistentTime === null){
+        this.persistentTime = "---";
+    }
+
+    this.persistentDistance = "" + this.storage.get('lastDistance').then((data) => {
+    console.log(data);
+    });
+
+    if(this.persistentDistance === null){
+        this.persistentDistance = "---";
+    }
 
     let config = {
       desiredAccuracy: 0,
@@ -173,6 +193,8 @@ export class LocationTracker {
     console.log("Final Distance: " + this.finalDist);
     this.storage.set('lastDistance', this.finalDist);
     this.storage.set('lastTime', this.finalTime);
+    this.persistentTime = this.finalTime;
+    this.persistentDistance = "" + this.finalDist;
     this.backgroundGeolocation.finish();
     this.watch.unsubscribe();
   }
