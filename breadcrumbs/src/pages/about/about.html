@@ -1,6 +1,6 @@
 ﻿
 <ion-header>
-  <ion-navbar color ="primary">
+  <ion-navbar color ="theme">
     <ion-title>About Breadcrumbs</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="closeAbout()">
@@ -12,32 +12,36 @@
 
 
 <ion-content padding>
-  <p>This is our breadcrumbs application for CS658. We are currently working on development and attempting to improve functionality whenever we can. 
-      In this about we will explain the use of the app and  our plans moving forward.  
+  <img src="assets/themeing/logo.png" alt="Breadcrumbs Banner">
+  <p>This is our breadcrumbs application for CS658. We are currently working on development and attempting to improve functionality whenever we can. In this area, we will explain the use of the app and our plans moving forward.  
   </p>
   <h6>Application Use</h6>
   <ol>
     <li>
-      On applicaton start up, the user will be presented with a start run button. Once this button is clicked, the user will then be taken
-      to a page that displays thier run information. Allowing them to see thier time, distance and current location and route on a map.
+      On applicaton start up, the user will be presented with our logo and a welcome menu.
     </li>
     <li>
-      From here the user can either choose to pause the run, then continue, or can choose to end the run. Ending the run will display the final
-      results then allow the user to start another run again.
+      The user will then be able to navigate to a sidemenu and will be presented with three options.
+        <ul>
+            <li>Welcome: Which will always navigate the user back to this welcome page.</li>
+            <li>Start Run: Which will direct them to the page to start a run.</li>
+            <li>Account: Which will allow a user to view their last run info, should there be any.</li>
+        </ul>
+    </li>
+    <li>
+        Should the user select "Start Run," then the users location and time will begin being recorded and they will be presented an application that records their time while moving.
+    </li>
+    <li>
+      From here the user can choose to end the run. Ending the run will display the final results then allow the user to return to the "Start Run" page to begin again.
     </li>
   </ol>
   <h6>Planned Development</h6>
-  <ol>
-    <li>
-      We plan to add the functionality to store user data, and have a login screen at application start up
-    </li>
-    <li>
-      We plan to add added functionality to the end of run screen, displaying more accurate and percise data at the user's request.
-    </li>
-    <li>
-      We plan to refactor the look of the app to make it more unique, eye-catching, and easy to use.
-    </li>
-  </ol>
+    We plan to continue to develop and refine this application as we move forward and work to improve its functionality and services.
+  <ul>
+    <li>We plan to separate the timing system from the location system so that we are then able to implement a pause run button.</li>
+    <li>It is also our goal to work on implementing better data collection and account systems, eventually implementing route call back and a "dynamic splits system that will allow a user to see specific info between any two points on a run."</li>
+    <li>We would also like to implement a VR functionality to track the routes you had taken prior for a sort of reverse navigation. (Ever hear of Hansle and Gretle?)</li>
+  </ul>
     <h6>
       Thank you for using our application!
     </h6>
