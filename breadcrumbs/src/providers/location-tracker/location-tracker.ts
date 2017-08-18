@@ -33,7 +33,7 @@ export class LocationTracker {
   public pullCounter: number = 0;
   //-------------------------
 
-  constructor(public zone: NgZone,private backgroundGeolocation: BackgroundGeolocation,private geolocation: Geolocation, public storage: Storage) {};
+  constructor(public zone: NgZone,private backgroundGeolocation: BackgroundGeolocation,private geolocation: Geolocation) {};
   //const config: BackgroundGeolocationConfig = {};
 
   startTracking() {
@@ -166,8 +166,8 @@ export class LocationTracker {
     console.log('stopTracking');
     console.log("Final Time: " + this.finalTime);
     console.log("Final Distance: " + this.finalDist);
-    this.storage.set('lastDistance', this.finalDist);
-    this.storage.set('lastTime', this.finalTime);
+    //this.storage.set('lastDistance', this.finalDist);
+    //this.storage.set('lastTime', this.finalTime);
 
     this.backgroundGeolocation.finish();
     this.watch.unsubscribe();

@@ -27493,6 +27493,10 @@ ion-navbar.toolbar {
   }
 }
 
+.no-scroll .scroll-content {
+  overflow: hidden;
+}
+
 page-home .no-scroll .scroll-content {
   overflow: hidden;
 }

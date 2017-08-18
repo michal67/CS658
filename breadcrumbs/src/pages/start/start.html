@@ -1,0 +1,27 @@
+<style>
+    ion-content{
+        background: url("/assets/themeing/breadcrumbsBack");
+        background-size: cover;         
+        background-repeat: no-repeat;
+        background-position: center center;            
+    }
+</style>
+
+<ion-header>
+  <ion-navbar color="theme">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title></ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="launchAboutPage()">
+                <ion-icon name="information-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="no-scroll">
+  <h6 style="font-size: 32px; text-align: center; margin-top: 20%"><strong>Welcome to</strong></h6>
+     <img src="assets/themeing/logo.png" alt="Breadcrumbs Logo">
+</ion-content>
